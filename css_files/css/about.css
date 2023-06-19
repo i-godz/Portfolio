@@ -82,22 +82,18 @@
     grid-column: 1;
     margin: 0 auto;
     margin-top: 20px;
-    margin-left: -50px;
-
+    margin-left: -20px;
   }
   .about-me-text-box {
     grid-column: 1;
     margin: 0 auto;
     width: 90%;
     margin-top: 20px;
-    margin-left: -10px;
   }
   .about-me-text {
     margin-left: 0px;
-    margin-top: -20px;
+    margin-top: -50px;
   }
-
-
 }
 
 @media (max-width: 768px) {

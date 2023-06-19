@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="css_files/css/413b1b52094806bc.css" />
     <noscript data-n-css=""></noscript>
     <link rel="stylesheet" href="css_files/css_pages/nav.css" />
-</head>
 
+
+
+</head>
 <!-- Nav bar Section -->
+
 <body>
     <div id="__next">
 
@@ -30,7 +33,7 @@
                     <a href="#Skills">
                         <li>Skills <span></span></li>
                     </a>
-                    <a href="#" onclick="downloadResume()">
+                    <a href="resume.pdf" download>
                         <li>Resume<span></span></li>
                     </a>
                     <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
@@ -46,63 +49,6 @@
                         <img src="/assets/icons/menu.svg" alt="menu" />
                     </button>
                 </div>
-            </header>
-            <header class="header_copy_header__Tms8U">
-                <a href="/">
-                </a>
-                <nav>
-                    <a href="/Portfolio">
-                        <li>Portfolio <span></span></li>
-                    </a>
-                    <a href="/#About">
-                        <li>About <span></span></li>
-                    </a>
-                    <a href="/#Skills">
-                        <li>Skills<span></span></li>
-                    </a>
-                    <a href="_next/resume.pdf" download>
-                        <li>resume <span></span></li>
-                    </a>
-                </nav>
-                <div class="header_copy_btn__ZY83Z">
-                    <a href="/#contact"><button>Let&#x27;s talk</button></a><button class="header_copy_menu__k65DJ">
-                        <img src="assets/icons/menu.svg" alt="menu" />
-                    </button>
-                </div>
-                <script>
-                    const headerMenuButton = document.querySelector('.header_menu__mOEeG');
-                    const navMenu = document.querySelector('.header_nav__3IPl2');
-
-                    // When the header menu button is clicked, toggle the visibility of the nav menu
-                    headerMenuButton.addEventListener('click', () => {
-                        navMenu.classList.toggle('is-active');
-                    });
-
-                    // When the window is resized, check if the nav menu is visible
-                    window.addEventListener('resize', () => {
-                        if (navMenu.classList.contains('is-active')) {
-                            navMenu.classList.remove('is-active');
-                        }
-                    });
-
-                    // Set the initial state of the nav menu to be hidden
-                    navMenu.classList.add('is-hidden');
-
-                    // When the user clicks on the nav menu, toggle the visibility of the nav menu
-                    navMenu.addEventListener('click', () => {
-                        navMenu.classList.toggle('is-active');
-                    });
-
-                    // Close the nav menu when the user clicks outside of it
-                    document.addEventListener('click', (event) => {
-                        if (event.target === navMenu) {
-                            return;
-                        }
-                        if (event.target.closest(navMenu) === null) {
-                            navMenu.classList.remove('is-active');
-                        }
-                    });
-                </script>
             </header>
 
             <!-- Hero Page Section -->
@@ -420,7 +366,7 @@
                                         <a class="footer-link" href="https://github.com/i-godz" target="_blank">
                                             <ion-icon name="logo-github"></ion-icon> GitHub
                                         </a>
-                                        <a class="footer-link" href="_next/resume.pdf" download>
+                                        <a class="footer-link" href="resume.pdf" download>
                                             <ion-icon name="document-outline"></ion-icon> Resume
                                         </a>
                                     </div>
@@ -444,7 +390,7 @@
                     </div>
                 </div>
             </footer>
-            <script src="_next/static/js/typewriter.js"></script>
+            <script src="js/typewriter.js"></script>
             <!-- Ion icons -->
             <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
