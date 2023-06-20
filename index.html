@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Zyad Wael</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css_files/css/new-nav.css" />
     <link rel="icon" type="image/png" href="assets/images/emoji.PNG" />
     <link rel="stylesheet" href="css_files/css/footer.css" />
     <link rel="stylesheet" href="css_files/css/skills.css" />
@@ -18,381 +22,398 @@
 
 
 <!-- Nav bar Section -->
+
 <body>
-    <div id="__next">
-        <body>
-            <header class="header_header__WaB8X header_primaryHeader__RmsL9">
-                <a href="/"></a>
-                <nav>
-                    <a href="#About">
-                        <li>About <span></span></li>
-                    </a>
-                    <a href="#Skills">
-                        <li>Skills <span></span></li>
-                    </a>
-                    <a href="resume.pdf" download>
-                        <li>Resume<span></span></li>
-                    </a>
-                    <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
-                    <script>
-                        function navigateTo(url) {
-                            window.location.href = url;
-                        }
-                    </script>
-                </nav>
-                <div class="header_btn__3IPl2">
-                    <a href="#contact"><button>Let's talk</button></a>
-                    <button class="header_menu__mOEeG">
-                        <img src="assets/icons/menu.svg" alt="menu" />
-                    </button>
-                </div>
-            </header>
-
-            <!-- Hero Page Section -->
-            <div class="home_container__Jmzag" id="about">
-                <main class="home_main__fOcqE">
-                    <section class="hero_container__JPDnU">
-                        <div class="hero_circle__sV8je"></div>
-                        <img src="assets/shapes/circle_1.png" alt="circle" class="hero_shape_1__p1IkS" />
-                        <img src="assets/shapes/shape_1.png" alt="shape" class="hero_shape_2__5dPGb" />
-                        <div class="hero_wrapper__vBwQd">
-                            <div class="hero_left__K7g02">
-                                <h1>Hello!</h1>
-                                <h1>
-                                    I'm<span>
-                                        Zyad. <span class="hero_underline__YNKEH"></span></span>
-                                </h1>
-                                <h2>
-                                    A Junior
-                                    <a href="" class="typewrite" data-period="2000"
-                                        data-type='["Data Analyst.", "Business Analyst.", "BI Developer."]'>
-                                        <span class="wrap"></span>
-                                    </a>
-                                </h2>
-                                <br /><br /><br />
-                                <div class="hero_btnContainer__aUeYJ">
-                                    <a href="#Portfolio"><button>View My Projects</button>
-                                    </a>
-                                </div>
-
-                                <div class="hero_socials__fREhu">
-                                    <a href="https://instagram.com/ii_godzilla_?igshid=MmIzYWVlNDQ5Yg=="
-                                        target="_blank">
-                                        <div class="hero_social__IbqZd">
-                                            <img src="assets/icons/instagram.png" alt="instagram" />
-                                            <p>Instagram</p>
-                                        </div>
-                                    </a>
-                                    <a href="https://github.com/i-godz" target="_blank">
-                                        <div class="hero_social__IbqZd">
-                                            <img src="assets/icons/github_2.svg" alt="github" />
-                                            <p>Github</p>
-                                        </div>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/zyad-wael-36367a261/" target="_blank">
-                                        <div class="hero_social__IbqZd">
-                                            <img src="assets/icons/linkedin_2.svg" alt="linkedin" />
-                                            <p>Linkedin</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="hero_right__Cq3O3">
-                                <img src="assets/images/hero-1.png" alt="hero" />
-                            </div>
-                        </div>
-                    </section>
-                </main>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="resume.pdf" download>Resume</a></li>
+                <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+                </script>
+            </ul>
+            <a href="#contact" class="action_btn">Let's Talk</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
+        </div>
 
-            <!-- Section About Me -->
-            <section class="section-about-me" id="section-about-me">
-                <h1 class="heading-primary" id="About" style="text-align: center">
-                    About Me
-                </h1>
+        <div class="dropdown_menu">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="resume.pdf" download>Resume</a></li>
+            <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
+            <script>
+                function navigateTo(url) {
+                    window.location.href = url;
+                }
+            </script>
+            <li><a href="#contact" class="action_btn">Let's Talk</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-                <div class="container grid grid-col-2">
-                    <div class="about-me-img-box">
-                        <img src="assets/images/emoji.PNG" alt="about me image" width="350" height="400" />
-                    </div>
-                    <div class="about-me-text-box">
-                        <p class="about-me-text">
-                            A senior
-                            <span class="highlight_About">Computer Science</span> student
-                            and a self-proclaimed data nerd with an insatiable passion for
-                            "data-driven decisions". I am acutely aware of the
-                            transformative impact that data analysis can have on any
-                            business's output. As I continue to hone my skills and mindset,
-                            I am dedicated to unleashing the full potential of data in
-                            driving business success.
-                            <br><br>
-                            Originally hailing from the Sultanate of Oman and now residing in vibrant Egypt, I've been
-                            exposed to
-                            diverse cultures and perspectives, which have shaped my global mindset. This international
-                            background
-                            allows me to approach challenges with a unique and open-minded perspective, ensuring
-                            innovative solutions
-                            tailored to the specific needs of any organization.
-                            <br><br>
-
-                            When I'm not immersed in coding and unraveling complex datasets, I find solace behind the
-                            virtual worlds
-                            of video games. It's within these captivating realms that my imagination thrives and new
-                            ideas blossom.
-                            Additionally, music acts as a constant source of inspiration, fueling my creativity and
-                            adding rhythm to
-                            my problem-solving process.
-                        </p>
-                    </div>
-                    <section>
-                        <div class="col-lg-12" style="padding-top: 5%">
-                            <svg width="750" height="100" viewBox="0 0 1000 100">
-                                <line x1="0" y1="50" x2="750" y2="50"
-                                    style="stroke: rgb(251, 250, 250); stroke-width: 1.5"></line>
-
-                                <circle cx="150" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                                </circle>
-                                <text text-anchor="middle" x="150" y="90" fill="white">
-                                    2018
-                                </text>
-                                <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">
-                                    IGCSE High School
-                                </text>
-                                <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80"
-                                    fill="white">
-                                    Dar El-Tarbiah
-                                </text>
-
-                                <circle cx="450" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                                </circle>
-                                <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">
-                                    Bachelor Degree
-                                </text>
-                                <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80"
-                                    fill="white">
-                                    Future University in Egypt
-                                </text>
-
-                                <circle cx="700" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                                </circle>
-                                <text text-anchor="middle" x="700" y="90" fill="white">
-                                    2024
-                                </text>
-                                <text font-size="13" text-anchor="middle" x="560" y="30" fill="white">
-                                    Data Analysis
-                                </text>
-                                <text style="font-style: italic" font-size="13" text-anchor="middle" x="560" y="80"
-                                    fill="white">
-                                    Self-Study
-                                </text>
-                            </svg>
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <!-- Hero Page Section -->
+    <div class="home_container__Jmzag" id="about">
+        <main class="home_main__fOcqE">
+            <section class="hero_container__JPDnU">
+                <div class="hero_circle__sV8je"></div>
+                <img src="assets/shapes/circle_1.png" alt="circle" class="hero_shape_1__p1IkS" />
+                <img src="assets/shapes/shape_1.png" alt="shape" class="hero_shape_2__5dPGb" />
+                <div class="hero_wrapper__vBwQd">
+                    <div class="hero_left__K7g02">
+                        <h1>Hello!</h1>
+                        <h1>
+                            I'm<span>
+                                Zyad. <span class="hero_underline__YNKEH"></span></span>
+                        </h1>
+                        <h2>
+                            A Junior
+                            <a href="" class="typewrite" data-period="2000"
+                                data-type='["Data Analyst.", "Business Analyst.", "BI Developer."]'>
+                                <span class="wrap"></span>
+                            </a>
+                        </h2>
+                        <br /><br /><br />
+                        <div class="hero_btnContainer__aUeYJ">
+                            <a href="#Portfolio"><button>View My Projects</button>
+                            </a>
                         </div>
-                    </section>
+
+                        <div class="hero_socials__fREhu">
+                            <a href="https://instagram.com/ii_godzilla_?igshid=MmIzYWVlNDQ5Yg==" target="_blank">
+                                <div class="hero_social__IbqZd">
+                                    <img src="assets/icons/instagram.png" alt="instagram" />
+                                    <p>Instagram</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/i-godz" target="_blank">
+                                <div class="hero_social__IbqZd">
+                                    <img src="assets/icons/github_2.svg" alt="github" />
+                                    <p>Github</p>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zyad-wael-36367a261/" target="_blank">
+                                <div class="hero_social__IbqZd">
+                                    <img src="assets/icons/linkedin_2.svg" alt="linkedin" />
+                                    <p>Linkedin</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero_right__Cq3O3">
+                        <img src="assets/images/hero-1.png" alt="hero" />
+                    </div>
                 </div>
             </section>
+        </main>
+    </div>
 
-            <!-- Section Skills -->
-            <section class="section-skills" id="section-skills">
-                <div class="container_sk" id="Skills">
-                    <span class="subheading_sk">Skills & Tools</span>
-                    <!-- <h2 class="heading-secondary">My Toolbox & Things I can do</h2>
+    <!-- Section About Me -->
+    <section class="section-about-me" id="section-about-me">
+        <h1 class="heading-primary" id="About" style="text-align: center">
+            About Me
+        </h1>
+
+        <div class="container grid grid-col-2">
+            <div class="about-me-img-box">
+                <img src="assets/images/emoji.PNG" alt="about me image" width="350" height="400" />
+            </div>
+            <div class="about-me-text-box">
+                <p class="about-me-text">
+                    A senior
+                    <span class="highlight_About">Computer Science</span> student
+                    and a self-proclaimed data nerd with an insatiable passion for
+                    "data-driven decisions". I am acutely aware of the
+                    transformative impact that data analysis can have on any
+                    business's output. As I continue to hone my skills and mindset,
+                    I am dedicated to unleashing the full potential of data in
+                    driving business success.
+                    <br><br>
+                    Originally hailing from the Sultanate of Oman and now residing in vibrant Egypt, I've been
+                    exposed to
+                    diverse cultures and perspectives, which have shaped my global mindset. This international
+                    background
+                    allows me to approach challenges with a unique and open-minded perspective, ensuring
+                    innovative solutions
+                    tailored to the specific needs of any organization.
+                    <br><br>
+
+                    When I'm not immersed in coding and unraveling complex datasets, I find solace behind the
+                    virtual worlds
+                    of video games. It's within these captivating realms that my imagination thrives and new
+                    ideas blossom.
+                    Additionally, music acts as a constant source of inspiration, fueling my creativity and
+                    adding rhythm to
+                    my problem-solving process.
+                </p>
+            </div>
+            <section>
+                <div class="col-lg-12" style="padding-top: 5%">
+                    <svg width="750" height="100" viewBox="0 0 1000 100">
+                        <line x1="0" y1="50" x2="750" y2="50" style="stroke: rgb(251, 250, 250); stroke-width: 1.5">
+                        </line>
+
+                        <circle cx="150" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
+                        </circle>
+                        <text text-anchor="middle" x="150" y="90" fill="white">
+                            2018
+                        </text>
+                        <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">
+                            IGCSE High School
+                        </text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="white">
+                            Dar El-Tarbiah
+                        </text>
+
+                        <circle cx="450" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
+                        </circle>
+                        <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">
+                            Bachelor Degree
+                        </text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80"
+                            fill="white">
+                            Future University in Egypt
+                        </text>
+
+                        <circle cx="700" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
+                        </circle>
+                        <text text-anchor="middle" x="700" y="90" fill="white">
+                            2024
+                        </text>
+                        <text font-size="13" text-anchor="middle" x="560" y="30" fill="white">
+                            Data Analysis
+                        </text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="560" y="80"
+                            fill="white">
+                            Self-Study
+                        </text>
+                    </svg>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Section Skills -->
+    <section class="section-skills" id="section-skills">
+        <div class="container_sk" id="Skills">
+            <span class="subheading_sk">Skills & Tools</span>
+            <!-- <h2 class="heading-secondary">My Toolbox & Things I can do</h2>
           <p class="skills-subheading">
             The skills, tools and technologies I use to bring your products to
             life
           </p> -->
-                </div>
-                <div class="container_sk skills-grid">
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/pandas.svg" />
-                        <p class="portfolio-title">Pandas</p>
-                    </div>
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/numpy.png" />
-                        <p class="portfolio-title">Numpy</p>
-                    </div>
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/matplot.png" />
-                        <p class="portfolio-title">Matplot</p>
-                    </div>
+        </div>
+        <div class="container_sk skills-grid">
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/pandas.svg" />
+                <p class="portfolio-title">Pandas</p>
+            </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/numpy.png" />
+                <p class="portfolio-title">Numpy</p>
+            </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/matplot.png" />
+                <p class="portfolio-title">Matplot</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/sikitlearn.png" />
-                        <p class="portfolio-title">Scikit-Learn</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/sikitlearn.png" />
+                <p class="portfolio-title">Scikit-Learn</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/excel.png" />
-                        <p class="portfolio-title">Excel</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/excel.png" />
+                <p class="portfolio-title">Excel</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/google.svg" />
-                        <p class="portfolio-title">Google Sheets</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/google.svg" />
+                <p class="portfolio-title">Google Sheets</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/mysql-svgrepo-com.svg" />
-                        <p class="portfolio-title">MySQL</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/mysql-svgrepo-com.svg" />
+                <p class="portfolio-title">MySQL</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/sqlserver.png" />
-                        <p class="portfolio-title">MySQL Server</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/sqlserver.png" />
+                <p class="portfolio-title">MySQL Server</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/oracle-logo-vector.png" />
-                        <p class="portfolio-title">Oracle</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/oracle-logo-vector.png" />
+                <p class="portfolio-title">Oracle</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/notion.svg" />
-                        <p class="portfolio-title">Notion</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/notion.svg" />
+                <p class="portfolio-title">Notion</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/Tableau.png" />
-                        <p class="portfolio-title">Tablaue</p>
-                    </div>
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/jupyter.png" />
-                        <p class="portfolio-title">Jupyter Notebook</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/Tableau.png" />
+                <p class="portfolio-title">Tablaue</p>
+            </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/jupyter.png" />
+                <p class="portfolio-title">Jupyter Notebook</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/google_colab.png" />
-                        <p class="portfolio-title">Google-Colab</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/google_colab.png" />
+                <p class="portfolio-title">Google-Colab</p>
+            </div>
 
-                    <div class="skill-item">
-                        <img class="skill-item-img" src="assets/icons/vs.png" />
-                        <p class="portfolio-title">Visual Studio</p>
-                    </div>
+            <div class="skill-item">
+                <img class="skill-item-img" src="assets/icons/vs.png" />
+                <p class="portfolio-title">Visual Studio</p>
+            </div>
 
-                </div>
-            </section>
+        </div>
+    </section>
 
-            <!-- Section Portfolio -->
-            <section class="section-portfolio" id="section-portfolio">
-                <div class="container-pt" id="Portfolio">
-                    <span class="subheading_pt">Portfolio</span>
-                    <h2 class="heading-secondary">
-                        Some previous projects but I am eager to take on more.
-                    </h2>
-                </div>
-                <div class="container-pt flex">
-                    <div class="grid grid-col-3">
+    <!-- Section Portfolio -->
+    <section class="section-portfolio" id="section-portfolio">
+        <div class="container-pt" id="Portfolio">
+            <span class="subheading_pt">Portfolio</span>
+            <h2 class="heading-secondary">
+                Some previous projects but I am eager to take on more.
+            </h2>
+        </div>
+        <div class="container-pt flex">
+            <div class="grid grid-col-3">
 
-                        <!-- HR Attrition Project -->
-                        <div class="portfolio-card">
-                            <div class="portfolio-text-box">
-                                <p class="portfolio-title">HR Attrition Dashboard</p>
-                                <p class="portfolio-description">
-                                    A dashboard that provides a comprehensive overview of
-                                    employee attrition, including the rate of attrition, the
-                                    reasons for attrition, and the demographics of employees who
-                                    have left the company.
-                                </p>
-                            </div>
-                            <div class="portfolio-button-area">
-                                <a href="hr_attrition.html" class="portfolio-btn">Details &rarr;</a>
-                            </div>
-                        </div>
-
-                        <!-- Breast Cancer -->
-                        <div class="portfolio-card">
-                            <div class="portfolio-text-box">
-                                <p class="portfolio-title">Breast Cancer Diagnosis</p>
-                                <p class="portfolio-description">
-                                    A machine learning models trained on breast cancer data to
-                                    classify tumors as malignant or benign.
-                                </p>
-                            </div>
-                            <div class="portfolio-button-area">
-                                <a href="breast_cancer.html" class="portfolio-btn">Details &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Form Section -->
-            <section class="contact_container___CE5a">
-                <img src="assets/shapes/typing_2.png" alt="typing" class="contact_object__VBBQI" />
-                <div class="contact_wrapper__tvaVr" id="contact">
-                    <h1>Contact Me</h1>
-                    <div>
-                        <p style="color: white; font-size: 20px">
-                            Wanna say a friendly hello? Reach out & let’s build something
-                            together!
+                <!-- HR Attrition Project -->
+                <div class="portfolio-card">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">HR Attrition Dashboard</p>
+                        <p class="portfolio-description">
+                            A dashboard that provides a comprehensive overview of
+                            employee attrition, including the rate of attrition, the
+                            reasons for attrition, and the demographics of employees who
+                            have left the company.
                         </p>
                     </div>
-                    <br />
-                    <br />
-                    <form>
-                        <input type="text" placeholder="Enter your name" required="" value="" />
-                        <input type="email" placeholder="Enter your email" required="" value="" />
-                        <textarea name="message" placeholder="Enter your message" required=""></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-            </section>
-
-            <!-- FOOTER -->
-            <footer>
-                <div class="wave">
-                    <div class="custom-shape-divider-bottom-1652512758">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                            preserveAspectRatio="none">
-                            <path
-                                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                                class="shape-fill"></path>
-                        </svg>
+                    <div class="portfolio-button-area">
+                        <a href="hr_attrition.html" class="portfolio-btn">Details &rarr;</a>
                     </div>
                 </div>
-                <div class="section-footer">
-                    <div class="container flex">
-                        <div class="footer-logo-box">
-                            <p class="footer-temp-logo">Zyad Wael</p>
+
+                <!-- Breast Cancer -->
+                <div class="portfolio-card">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">Breast Cancer Diagnosis</p>
+                        <p class="portfolio-description">
+                            A machine learning models trained on breast cancer data to
+                            classify tumors as malignant or benign.
+                        </p>
+                    </div>
+                    <div class="portfolio-button-area">
+                        <a href="breast_cancer.html" class="portfolio-btn">Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact_container___CE5a">
+        <img src="assets/shapes/typing_2.png" alt="typing" class="contact_object__VBBQI" />
+        <div class="contact_wrapper__tvaVr" id="contact">
+            <h1>Contact Me</h1>
+            <div>
+                <p style="color: white; font-size: 20px">
+                    Wanna say a friendly hello? Reach out & let’s build something
+                    together!
+                </p>
+            </div>
+            <br />
+            <br />
+            <form>
+                <input type="text" placeholder="Enter your name" required="" value="" />
+                <input type="email" placeholder="Enter your email" required="" value="" />
+                <textarea name="message" placeholder="Enter your message" required=""></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wave">
+            <div class="custom-shape-divider-bottom-1652512758">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="section-footer">
+            <div class="container flex">
+                <div class="footer-logo-box">
+                    <p class="footer-temp-logo">Zyad Wael</p>
+                </div>
+                <div class="footer-text-box">
+                    <div class="footer-grid">
+                        <div>
+                            <h3 class="heading-ter">Resources</h3>
+                            <div class="footer-link-box">
+                                <a class="footer-link" href="https://github.com/i-godz" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon> GitHub
+                                </a>
+                                <a class="footer-link" href="resume.pdf" download>
+                                    <ion-icon name="document-outline"></ion-icon> Resume
+                                </a>
+                            </div>
                         </div>
-                        <div class="footer-text-box">
-                            <div class="footer-grid">
-                                <div>
-                                    <h3 class="heading-ter">Resources</h3>
-                                    <div class="footer-link-box">
-                                        <a class="footer-link" href="https://github.com/i-godz" target="_blank">
-                                            <ion-icon name="logo-github"></ion-icon> GitHub
-                                        </a>
-                                        <a class="footer-link" href="resume.pdf" download>
-                                            <ion-icon name="document-outline"></ion-icon> Resume
-                                        </a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="heading-ter">Find me on</h3>
-                                    <div class="footer-link-box">
-                                        <a class="footer-link" href="https://www.linkedin.com/in/zyad-wael-36367a261/"
-                                            target="_blank">
-                                            <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
-                                        </a>
-                                        <a class="footer-link"
-                                            href="https://www.instagram.com/ii_godzilla_/?igshid=MmIzYWVlNDQ5Yg%3D%3D"
-                                            target="_blank">
-                                            <ion-icon name="logo-instagram"></ion-icon> Instagram
-                                        </a>
-                                    </div>
-                                </div>
+                        <div>
+                            <h3 class="heading-ter">Find me on</h3>
+                            <div class="footer-link-box">
+                                <a class="footer-link" href="https://www.linkedin.com/in/zyad-wael-36367a261/"
+                                    target="_blank">
+                                    <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+                                </a>
+                                <a class="footer-link"
+                                    href="https://www.instagram.com/ii_godzilla_/?igshid=MmIzYWVlNDQ5Yg%3D%3D"
+                                    target="_blank">
+                                    <ion-icon name="logo-instagram"></ion-icon> Instagram
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <script src="js/typewriter.js"></script>
-            <!-- Ion icons -->
-            <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-        </body>
-    </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/typewriter.js"></script>
+    <!-- Ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+</div>
 </body>
 
 </html>

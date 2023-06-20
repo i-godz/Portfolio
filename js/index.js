@@ -8,15 +8,5 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
   
-  // Mobile Navigation
-  const openNav = document.querySelector('.btn-mobile');
-  const closeNav = document.querySelector('.btn-mobile-nav');
-  const header = document.querySelector('.header');
-  
-  openNav.addEventListener('click', () => {
-    header.classList.add('nav-open');
-  });
-  closeNav.addEventListener('click', () => {
-    header.classList.remove('nav-open');
-  });
+
   
