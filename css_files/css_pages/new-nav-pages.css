@@ -20,7 +20,8 @@ a {
   text-decoration: none;
   color: #8a90a2;
 }
-a:hover {
+a:hover,
+.links li.certificates-link:hover {
   color: #292930;
 }
 .header {

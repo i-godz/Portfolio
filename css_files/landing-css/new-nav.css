@@ -20,7 +20,8 @@ a {
   text-decoration: none;
   color: #8a90a2;
 }
-a:hover {
+a:hover,
+.links li.certificates-link:hover {
   color: #292930;
 }
 .header {
@@ -121,7 +122,6 @@ a:hover {
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   z-index: 999;
-
 }
 .dropdown_menu.open {
   height: 320px;
@@ -152,7 +152,6 @@ a:hover {
   .navbar .action_btn,
   .navbar .links {
     display: none;
-    
   }
   .navbar .toggle_btn {
     display: block;

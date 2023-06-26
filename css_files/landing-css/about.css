@@ -72,6 +72,11 @@
   .grid-ab {
     column-gap: 5.4rem;
     row-gap: 4.6rem;
+    padding-top: 4rem;
+  }
+  .about-me-img-box-ab img{
+    padding-top: 4rem;
+    width: 102%;
   }
 }
 /* 2) Below 1000px */
@@ -115,6 +120,12 @@
   .section-about-me-ab .grid-ab {
     column-gap: 2.4rem;
     margin-bottom: 0;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 52rem){
+  .about-me-img-box-ab img{
+    padding-top: 2rem;
   }
 }
 /* 4) Below 708px */
@@ -139,6 +150,7 @@
   .section-about-me-ab .about-me-img-box-ab img {
     width: 66%;
     margin-top: 2.2rem;
+    padding-top: 0rem;
   }
 }
 
