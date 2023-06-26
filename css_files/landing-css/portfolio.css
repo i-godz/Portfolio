@@ -2,8 +2,7 @@
   margin: 6.4rem auto;
 }
 .section-portfolio {
-  margin-top: 9.6rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6.6rem;
 }
 .section-portfolio .container-pt {
   margin-bottom: 3.4rem;
@@ -253,8 +252,9 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin-bottom: 1.6rem;
+  margin-top: -4rem;
   letter-spacing: 0.75px;
   text-align: center;
   font-size: 70px;
@@ -319,4 +319,45 @@ body {
 }
 .span_pt {
   color: #ffd109;
+}
+/* VIEW ALL WORK BUTTON */
+.Port-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.port-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color-3);
+  background: #5956e9;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  padding: 0 50px;
+  border-radius: 10px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all .3s ease-out 0s;
+}
+
+.port-btn:hover {
+  background: #ffcd09;
+  color: #292930;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .port-btn {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .port-btn {
+    padding: 0 20px;
+  }
 }

@@ -1,11 +1,8 @@
-blockquote,
 body,
 button,
 html,
 input,
-label,
 li,
-small,
 span,
 textarea {
   font-family: DM Sans, sans-serif;
@@ -16,26 +13,25 @@ textarea {
   box-sizing: border-box;
   font-family: DM Sans, sans-serif;
 }
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
-  color: #8a90a2; /* Set default color for links */
+  color: #8a90a2;
 }
-
 a:hover {
   color: #292930;
 }
-
-/* header */
 .header {
   position: relative;
-  background: #ffffff;
+  background: #fff;
 }
-
+.logoText {
+  font-family: Rock Salt, sans-serif !important;
+  font-size: 30px;
+  padding-left: 2rem;
+}
 .navbar {
   position: absolute;
   width: 100%;
@@ -46,16 +42,13 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   z-index: 500;
-  /* background-color: transparent; */
   transition: all 0.1s ease-in-out;
   margin-top: 30px;
 }
-
 .navbar .logo a {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 .navbar .links {
   display: flex;
   justify-content: space-between;
@@ -70,13 +63,11 @@ a:hover {
   transition: color 0.3s ease-out 0s;
   margin-right: 208px;
 }
-
 .links li {
   position: relative;
   font-size: 18px;
-  color: #8a90a2; /* Set default color for links */
+  color: #8a90a2;
 }
-
 .links li::after {
   content: "";
   position: absolute;
@@ -87,19 +78,16 @@ a:hover {
   background-color: transparent;
   transition: width 0.3s ease-out 0s, background-color 0.3s ease-out 0s;
 }
-
 .links li:hover::after {
   width: 100%;
   background-color: #ffd109;
 }
-
 .navbar .toggle_btn {
-  color: #000000;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 3rem;
   cursor: pointer;
   display: none;
 }
-
 .action_btn {
   font-size: 16px;
   font-weight: 700;
@@ -118,17 +106,13 @@ a:hover {
   margin-top: 15px;
   margin-right: -33px;
 }
-
 .action_btn:hover {
-  /* scale: 1.05; */
   color: #fff;
   background: #292930;
 }
-
 .action_btn:active {
-  scale: 0.95;
+  transform: scale(0.95);
 }
-
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -136,25 +120,24 @@ a:hover {
   top: 60px;
   height: 0;
   width: 300px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-  z-index: 999; /* Add z-index to make the menu appear above other elements */
+  z-index: 999;
 }
-
 .dropdown_menu.open {
   height: 320px;
   width: 270px;
-  z-index: 1000; /* Increase z-index when the menu is open to overlay other content */
+  z-index: 1000;
+  box-shadow: 2rem 2rem 1.5rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
 }
-
 .dropdown_menu.open {
   height: 320px;
   cursor: pointer;
 }
-
 .dropdown_menu li {
   padding: 7px;
   padding-top: 10px;
@@ -164,20 +147,16 @@ a:hover {
   cursor: pointer;
   font-size: 25px;
 }
-
 .dropdown_menu .action_btn {
   display: flex;
   justify-content: center;
   margin-left: -29px;
 }
-
-/* responsive design */
 @media (max-width: 992px) {
-  .navbar .links,
-  .navbar .action_btn {
+  .navbar .action_btn,
+  .navbar .links {
     display: none;
   }
-
   .navbar .toggle_btn {
     display: block;
     display: flex;
@@ -186,19 +165,22 @@ a:hover {
     height: 57px;
     width: 57px;
     padding: 0;
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     z-index: 2;
     margin-right: 20px;
   }
   .dropdown_menu {
     display: block;
+    left: 38rem;
+    width: unset;
   }
 }
 
 @media (max-width: 576px) {
   .dropdown_menu {
     left: 4rem;
+    top: 9rem;
     width: unset;
   }
 }

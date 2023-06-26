@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -8,35 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css_files/css/new-nav.css" />
     <link rel="icon" type="image/png" href="assets/images/emoji.PNG" />
-    <link rel="stylesheet" href="css_files/css/footer.css" />
-    <link rel="stylesheet" href="css_files/css/skills.css" />
-    <link rel="stylesheet" href="css_files/css/portfolio.css" />
-    <link rel="stylesheet" href="css_files/css/about.css" />
-    <link rel="stylesheet" href="css_files/css/header.css" />
-    <link rel="stylesheet" href="css_files/css/413b1b52094806bc.css" />
-    <noscript data-n-css=""></noscript>
-    <link rel="stylesheet" href="css_files/css_pages/nav.css" />
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css_files/landing-css/new-nav.css" />
+    <link rel="stylesheet" href="css_files/landing-css/hero-contact.css" />
+    <link rel="stylesheet" href="css_files/landing-css/about.css" />
+    <link rel="stylesheet" href="css_files/landing-css/skills.css" />
+    <link rel="stylesheet" href="css_files/landing-css/portfolio.css" />
+    <link rel="stylesheet" href="css_files/landing-css/footer.css" />
+    <link rel="stylesheet" href="css_files/landing-css/general.css" />
 </head>
 
 
 <!-- Nav bar Section -->
 
+
 <body>
     <header class="header">
         <div class="navbar">
-            <div class="logo"><a href="#"></a></div>
+            <div class="logo"></div>
             <ul class="links">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="resume.pdf" download>Resume</a></li>
+                <li><a class="smooth-scroll" href="#About">About</a></li>
+                <li><a class="smooth-scroll" href="#Skills">Skills</a></li>
+                <li><a href="assets/resume.pdf" download>Resume</a></li>
                 <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
-                <script>
-                    function navigateTo(url) {
-                        window.location.href = url;
-                    }
-                </script>
             </ul>
             <a href="#contact" class="action_btn">Let's Talk</a>
             <div class="toggle_btn">
@@ -45,33 +41,20 @@
         </div>
 
         <div class="dropdown_menu">
+            <ul>
             <li><a href="#About">About</a></li>
             <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="resume.pdf" download>Resume</a></li>
+            <li><a href="assets/resume.pdf" download>Resume</a></li>
             <li onclick="navigateTo('certificates.html')">Certificates<span></span></li>
-            <script>
-                function navigateTo(url) {
-                    window.location.href = url;
-                }
-            </script>
             <li><a href="#contact" class="action_btn">Let's Talk</a></li>
+            </ul>
         </div>
     </header>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+
     <!-- Hero Page Section -->
+
+
     <div class="home_container__Jmzag" id="about">
         <main class="home_main__fOcqE">
             <section class="hero_container__JPDnU">
@@ -87,22 +70,22 @@
                         </h1>
                         <h2>
                             A Junior
-                            <a href="" class="typewrite" data-period="2000"
+                            <a class="typewrite" data-period="2000"
                                 data-type='["Data Analyst.", "Business Analyst.", "BI Developer."]'>
                                 <span class="wrap"></span>
                             </a>
                         </h2>
                         <br /><br /><br />
                         <div class="hero_btnContainer__aUeYJ">
-                            <a href="#Portfolio"><button>View My Projects</button>
+                            <a href="#Portfolio"><button type="button">View My Projects</button>
                             </a>
                         </div>
 
                         <div class="hero_socials__fREhu">
-                            <a href="https://instagram.com/ii_godzilla_?igshid=MmIzYWVlNDQ5Yg==" target="_blank">
+                            <a href="https://www.kaggle.com/zyadwael" target="_blank">
                                 <div class="hero_social__IbqZd">
-                                    <img src="assets/icons/instagram.png" alt="instagram" />
-                                    <p>Instagram</p>
+                                    <img src="assets/icons/kaggle.svg" alt="kaggle" />
+                                    <p>KAGGLE</p>
                                 </div>
                             </a>
                             <a href="https://github.com/i-godz" target="_blank">
@@ -127,184 +110,140 @@
         </main>
     </div>
 
+
     <!-- Section About Me -->
-    <section class="section-about-me" id="section-about-me">
-        <h1 class="heading-primary" id="About" style="text-align: center">
-            About Me
-        </h1>
 
-        <div class="container grid grid-col-2">
-            <div class="about-me-img-box">
-                <img src="assets/images/emoji.PNG" alt="about me image" width="350" height="400" />
+
+    <section class="section-about-me-ab" id="About">
+        <div class="subheading-ab">About Me</div>
+        <div class="container-ab grid-ab grid-col-2-ab">
+            <div class="about-me-img-box-ab">
+                <img src="assets/images/emoji.PNG" alt="about me image" />
             </div>
-            <div class="about-me-text-box">
-                <p class="about-me-text">
-                    A senior
-                    <span class="highlight_About">Computer Science</span> student
-                    and a self-proclaimed data nerd with an insatiable passion for
-                    "data-driven decisions". I am acutely aware of the
-                    transformative impact that data analysis can have on any
-                    business's output. As I continue to hone my skills and mindset,
-                    I am dedicated to unleashing the full potential of data in
-                    driving business success.
-                    <br><br>
-                    Originally hailing from the Sultanate of Oman and now residing in vibrant Egypt, I've been
-                    exposed to
-                    diverse cultures and perspectives, which have shaped my global mindset. This international
-                    background
-                    allows me to approach challenges with a unique and open-minded perspective, ensuring
-                    innovative solutions
-                    tailored to the specific needs of any organization.
-                    <br><br>
-
-                    When I'm not immersed in coding and unraveling complex datasets, I find solace behind the
-                    virtual worlds
-                    of video games. It's within these captivating realms that my imagination thrives and new
-                    ideas blossom.
-                    Additionally, music acts as a constant source of inspiration, fueling my creativity and
-                    adding rhythm to
-                    my problem-solving process.
+            <div class="about-me-text-box-ab">
+                <p class="about-me-text-ab">
+                    A senior <span class="highlight-ab">Computer Science</span>, student and a self-proclaimed data nerd
+                    with an insatiable passion for "data-driven decisions". I am acutely aware of the transformative
+                    impact that data analysis can have on any business's output. As I continue to hone my skills and
+                    mindset, I am dedicated to unleashing the full potential of data in driving business success.
                 </p>
             </div>
-            <section>
-                <div class="col-lg-12" style="padding-top: 5%">
-                    <svg width="750" height="100" viewBox="0 0 1000 100">
-                        <line x1="0" y1="50" x2="750" y2="50" style="stroke: rgb(251, 250, 250); stroke-width: 1.5">
-                        </line>
+        </div>
+        <div class="col-lg-12">
+            <svg width="750" height="100">
+                <line class="line" x1="0" y1="50" x2="750" y2="50"></line>
 
-                        <circle cx="150" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                        </circle>
-                        <text text-anchor="middle" x="150" y="90" fill="white">
-                            2018
-                        </text>
-                        <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">
-                            IGCSE High School
-                        </text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="white">
-                            Dar El-Tarbiah
-                        </text>
+                <circle class="circle" cx="150" cy="50" r="10" fill="#FFA500"></circle>
+                <text class="text" x="150" y="90" fill="white">2018</text>
+                <text class="text-small" x="70" y="30" fill="white">IGCSE High School</text>
+                <text class="text-small" x="70" y="80" fill="white">Dar El-Tarbiah</text>
 
-                        <circle cx="450" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                        </circle>
-                        <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">
-                            Bachelor Degree
-                        </text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80"
-                            fill="white">
-                            Future University in Egypt
-                        </text>
+                <circle class="circle" cx="450" cy="50" r="10" fill="#FFA500"></circle>
+                <text class="text" x="300" y="30" fill="white">Bachelor Degree</text>
+                <text class="text-small" x="300" y="80" fill="white">Future University in Egypt</text>
 
-                        <circle cx="700" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#FFA500">
-                        </circle>
-                        <text text-anchor="middle" x="700" y="90" fill="white">
-                            2024
-                        </text>
-                        <text font-size="13" text-anchor="middle" x="560" y="30" fill="white">
-                            Data Analysis
-                        </text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="560" y="80"
-                            fill="white">
-                            Self-Study
-                        </text>
-                    </svg>
-                </div>
-            </section>
+                <circle class="circle" cx="700" cy="50" r="10" fill="#FFA500"></circle>
+                <text class="text" x="700" y="90" fill="white">2024</text>
+                <text class="text-small" x="560" y="30" fill="white">Data Analysis</text>
+                <text class="text-small" x="560" y="80" fill="white">Self-Study</text>
+            </svg>
         </div>
     </section>
 
+
     <!-- Section Skills -->
+
+
     <section class="section-skills" id="section-skills">
         <div class="container_sk" id="Skills">
-            <span class="subheading_sk">Skills & Tools</span>
-            <!-- <h2 class="heading-secondary">My Toolbox & Things I can do</h2>
-          <p class="skills-subheading">
-            The skills, tools and technologies I use to bring your products to
-            life
-          </p> -->
+            <span class="subheading_sk">Skills &amp; Tools</span>
         </div>
         <div class="container_sk skills-grid">
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/pandas.svg" />
+                <img class="skill-item-img" src="assets/icons/pandas.svg" alt="pandas icon" />
                 <p class="portfolio-title">Pandas</p>
             </div>
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/numpy.png" />
+                <img class="skill-item-img" src="assets/icons/numpy.png" alt="numpy icon" />
                 <p class="portfolio-title">Numpy</p>
             </div>
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/matplot.png" />
+                <img class="skill-item-img" src="assets/icons/matplot.png" alt="matpolt icon" />
                 <p class="portfolio-title">Matplot</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/sikitlearn.png" />
+                <img class="skill-item-img" src="assets/icons/sikitlearn.png" alt="scikitlearn icon" />
                 <p class="portfolio-title">Scikit-Learn</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/excel.png" />
+                <img class="skill-item-img" src="assets/icons/excel.png" alt="excel icon" />
                 <p class="portfolio-title">Excel</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/google.svg" />
+                <img class="skill-item-img" src="assets/icons/google.svg" alt="google sheets icon" />
                 <p class="portfolio-title">Google Sheets</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/mysql-svgrepo-com.svg" />
+                <img class="skill-item-img" src="assets/icons/mysql-svgrepo-com.svg" alt="mysql icon" />
                 <p class="portfolio-title">MySQL</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/sqlserver.png" />
+                <img class="skill-item-img" src="assets/icons/sqlserver.png" alt="sqlserver icon" />
                 <p class="portfolio-title">MySQL Server</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/oracle-logo-vector.png" />
+                <img class="skill-item-img" src="assets/icons/oracle-logo-vector.png" alt="oracle icon" />
                 <p class="portfolio-title">Oracle</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/notion.svg" />
+                <img class="skill-item-img" src="assets/icons/notion.svg" alt="notion icon" />
                 <p class="portfolio-title">Notion</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/Tableau.png" />
+                <img class="skill-item-img" src="assets/icons/Tableau.png" alt="tableau icon" />
                 <p class="portfolio-title">Tablaue</p>
             </div>
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/jupyter.png" />
+                <img class="skill-item-img" src="assets/icons/jupyter.png" alt="jupyter icon" />
                 <p class="portfolio-title">Jupyter Notebook</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/google_colab.png" />
+                <img class="skill-item-img" src="assets/icons/google_colab.png" alt=" google colab icon" />
                 <p class="portfolio-title">Google-Colab</p>
             </div>
 
             <div class="skill-item">
-                <img class="skill-item-img" src="assets/icons/vs.png" />
+                <img class="skill-item-img" src="assets/icons/vs.png" alt=" visual studio icon" />
                 <p class="portfolio-title">Visual Studio</p>
             </div>
-
         </div>
     </section>
 
+
     <!-- Section Portfolio -->
+
+
     <section class="section-portfolio" id="section-portfolio">
         <div class="container-pt" id="Portfolio">
             <span class="subheading_pt">Portfolio</span>
             <h2 class="heading-secondary">
-                Some previous projects but I am eager to take on more.
+                Some previous projects, but I am eager to take on more.
             </h2>
         </div>
         <div class="container-pt flex">
             <div class="grid grid-col-3">
 
                 <!-- HR Attrition Project -->
+
                 <div class="portfolio-card">
                     <div class="portfolio-text-box">
                         <p class="portfolio-title">HR Attrition Dashboard</p>
@@ -321,6 +260,7 @@
                 </div>
 
                 <!-- Breast Cancer -->
+
                 <div class="portfolio-card">
                     <div class="portfolio-text-box">
                         <p class="portfolio-title">Breast Cancer Diagnosis</p>
@@ -335,22 +275,28 @@
                 </div>
             </div>
         </div>
+        <div class="Port-btn">
+            <a href="view-all-projects.html" class="port-btn">View More</a>
+        </div>
     </section>
 
+
     <!-- Contact Form Section -->
+
+
     <section class="contact_container___CE5a">
         <img src="assets/shapes/typing_2.png" alt="typing" class="contact_object__VBBQI" />
         <div class="contact_wrapper__tvaVr" id="contact">
             <h1>Contact Me</h1>
             <div>
-                <p style="color: white; font-size: 20px">
+                <p class="contact_heading">
                     Wanna say a friendly hello? Reach out & let’s build something
                     together!
                 </p>
             </div>
             <br />
             <br />
-            <form method="post" action="send_email.php">
+            <form action="https://formspree.io/f/xyyqgkzw" method="POST">
                 <input type="text" name="name" placeholder="Enter your name" required="" value="" />
                 <input type="email" name="email" placeholder="Enter your email" required="" value="" />
                 <textarea name="message" placeholder="Enter your message" required=""></textarea>
@@ -359,7 +305,10 @@
         </div>
     </section>
 
+
     <!-- FOOTER -->
+
+
     <footer>
         <div class="wave">
             <div class="custom-shape-divider-bottom-1652512758">
@@ -408,8 +357,15 @@
             </div>
         </div>
     </footer>
+    <!-- SCROLL UP -->
+    <button id="scrollToTopButton" type="button">&#8673;</button>
+    <!-- JAVA SCRIPTS -->
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/navigate-to.js"></script>
+    <script src="js/scroll-to-top.js"></script>
     <script src="js/typewriter.js"></script>
-    <!-- Ion icons -->
+    <script src="js/smoothscroll.js "></script>
+    <!-- footer icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </body>

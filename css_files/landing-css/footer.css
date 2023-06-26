@@ -6,15 +6,13 @@
   overflow: hidden;
   line-height: 0;
 }
-
 .heading-ter {
   font-weight: 800;
-  color: #000000;
+  color: #000;
   letter-spacing: -0.5px;
-    font-size: 2.2rem;
-    line-height: 1.2;
+  font-size: 2.2rem;
+  line-height: 1.2;
 }
-
 .custom-shape-divider-bottom-1652342433 svg {
   position: relative;
   display: block;
@@ -33,7 +31,7 @@
 .footer-temp-logo {
   font-size: 4.2rem;
   font-family: Rock Salt, sans-serif !important;
-  color: black;
+  color: #000;
 }
 .custom-shape-divider-bottom-1652512758 {
   position: absolute;
@@ -50,7 +48,7 @@
   height: 76px;
 }
 .custom-shape-divider-bottom-1652512758 .shape-fill {
-  fill: #ffffff;
+  fill: #fff;
 }
 .wave {
   position: relative;
@@ -83,9 +81,8 @@ footer {
   position: relative;
 }
 .section-footer {
-  /* margin-top: rem; */
   padding: 3.2rem 0;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .footer-grid {
   display: grid;
@@ -157,9 +154,6 @@ footer {
   }
 }
 @media (max-width: 34rem) {
-  .heading-tertiary {
-    font-size: 2.4rem;
-  }
   .container {
     padding: 0 2.4rem;
   }
@@ -179,9 +173,6 @@ footer {
   }
 }
 @media (max-width: 26.5rem) {
-  .heading-tertiary {
-    font-size: 2.2rem;
-  }
   .container {
     padding: 0 1.3rem;
   }
@@ -193,9 +184,6 @@ footer {
   }
 }
 @media (max-width: 62.5rem) {
-  .heading-tertiary {
-    font-size: 2.8rem;
-  }
   .custom-shape-divider-bottom-1652342433 svg {
     height: 270px;
   }
@@ -207,9 +195,6 @@ footer {
   }
 }
 @media (max-width: 52rem) {
-  .heading-tertiary {
-    font-size: 2.6rem;
-  }
   .custom-shape-divider-bottom-1652342433 svg {
     height: 200px;
   }
@@ -246,11 +231,6 @@ footer {
   .container {
     padding: 0 2.4rem;
   }
-  .heading-tertiary {
-    font-size: 2.4rem;
-    color: #fff;
-  }
-
   .footer-grid {
     column-gap: 8.2rem;
   }

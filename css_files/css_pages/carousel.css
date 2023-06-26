@@ -92,3 +92,8 @@
 .is-hidden {
   display: none;
 }
+.carousel__button--left svg {
+  enable-background: new 0 0 330 330;
+}.carousel__button--right svg {
+  enable-background: new 0 0 330 330;
+}

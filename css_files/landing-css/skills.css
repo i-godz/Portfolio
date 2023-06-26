@@ -24,7 +24,6 @@
   position: relative;
   background-color: var(--color-6);
   padding-block: 7.2rem;
-  margin-top: -4.4rem;
 }
 .skills-grid {
   display: grid;
@@ -44,6 +43,12 @@
 .skill-item {
   text-align: center;
 }
+.skill-item:hover .skill-item-img {
+  transform: scale(1.1);
+}
+.skill-item-img {
+  transition: transform 0.3s ease-in-out;
+}
 .skill-item-img {
   height: 76px;
   width: 76px;
@@ -52,10 +57,7 @@
   height: 76px;
   width: 76px;
 }
-
 .container_sk {
-  /* 1140px */
-  /* max-width: 120rem; */
   padding: 0 6.4rem;
   margin: 0 auto;
 }
@@ -240,7 +242,7 @@ body {
 .subheading_sk {
   display: block;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin-bottom: 8rem;
   letter-spacing: 0.75px;
   text-align: center;
