@@ -49,31 +49,32 @@ a {
 
 /* Scroll-to-Top Button */
 button#scrollToTopButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background-color: #423ef3;
-    color: #fff;
-    font-size: 24px;
-    display: none;
-    cursor: pointer;
-    opacity: 0;
-    animation: fade-in 0.5s forwards;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #423ef3;
+  color: #fff;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  z-index: 9999;
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 button#scrollToTopButton.show {
-    display: block;
+  display: block;
 }
