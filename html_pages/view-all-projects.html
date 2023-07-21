@@ -18,11 +18,7 @@
   <link rel="stylesheet" href="/css_files/css_pages/styles.css" />
   <link rel="stylesheet" href="/css_files/css_pages/portfolioItemQuery.css" />
   <link rel="stylesheet" href="/css_files/landing-css/general.css" />
-  <!-- Font montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
-
+  <link rel="stylesheet" href="/css_files/css_pages/filter.css" />
 
 
   <!-- Font montserrat -->
@@ -64,7 +60,6 @@
     </div>
   </header>
 
-
   <!-- Hero Page Section -->
 
 
@@ -86,11 +81,47 @@
       </section>
     </main>
   </div>
-  <br><br><br><br> <br><br><br><br> <br><br><br><br>
+
+
+  <!-- filter section -->
+
+  <div class="container-f">
+    <div class="select-btn-f">
+      <span class="btn-text-f">Tech Filter</span>
+      <span class="arrow-dwn-f">
+        <i class="fa-solid fa-chevron-down"></i>
+      </span>
+    </div>
+    <ul class="list-items-f">
+      <li class="item-f">
+        <span class="checkbox-f">
+          <i class="fa-solid fa-check check-icon"></i>
+        </span>
+        <span class="item-text-f">Excel</span>
+      </li>
+      <li class="item-f">
+        <span class="checkbox-f">
+          <i class="fa-solid fa-check check-icon"></i>
+        </span>
+        <span class="item-text-f">Python</span>
+      </li>
+      <li class="item-f">
+        <span class="checkbox-f">
+          <i class="fa-solid fa-check check-icon"></i>
+        </span>
+        <span class="item-text-f">SQL</span>
+      </li>
+      <li class="item-f">
+        <span class="checkbox-f">
+          <i class="fa-solid fa-check check-icon"></i>
+        </span>
+        <span class="item-text-f">Tableau</span>
+      </li>
+    </ul>
+  </div>
 
 
   <!-- Section Portfolio -->
-
 
   <section class="section-portfolio" id="section-portfolio">
     <div class="container-pt" id="Portfolio">
@@ -98,12 +129,13 @@
     <div class="container-pt flex">
       <div class="grid grid-col-3">
 
-        <!-- HR Attrition Project -->
+        <!-- Gold Price Prediction -->
 
         <div class="portfolio-card">
           <div class="portfolio-text-box">
             <p class="portfolio-title">Gold Price Prediction
             </p>
+            <p class="portfolio-tech">Python</p>
             <p class="portfolio-description">
               The goal of this project is to develop a machine learning model that can predict the price of gold based
               on historical data.
@@ -114,11 +146,13 @@
           </div>
         </div>
 
+
         <!-- Global Terrorism -->
 
         <div class="portfolio-card">
           <div class="portfolio-text-box">
             <p class="portfolio-title">Global Terrorism</p>
+            <p class="portfolio-tech">Python, Tableau</p>
             <p class="portfolio-description">
               The objective of this project is to analyze the dataset on terrorism and identify the hot zones of
               terrorism using exploratory data analysis techniques.
@@ -129,11 +163,13 @@
           </div>
         </div>
 
+
         <!-- Image to Pencil Sketch -->
 
         <div class="portfolio-card">
           <div class="portfolio-text-box">
             <p class="portfolio-title">Image to Pencil Sketch</p>
+            <p class="portfolio-tech">Python</p>
             <p class="portfolio-description">
               This project aims to create a pencil sketch of an image using Python.The objective of this project is to
               use image processing techniques in Python to create a pencil sketch of an input image.
@@ -143,11 +179,14 @@
             <a href="/html_pages/all-projects-portfolio/pencil-sketch.html" class="portfolio-btn">Details &rarr;</a>
           </div>
         </div>
+
+
         <!-- HR Attrition Project -->
 
         <div class="portfolio-card">
           <div class="portfolio-text-box">
             <p class="portfolio-title">HR Attrition Dashboard</p>
+            <p class="portfolio-tech">Excel</p>
             <p class="portfolio-description">
               A dashboard that provides a comprehensive overview of
               employee attrition, including the rate of attrition, the
@@ -166,6 +205,7 @@
         <div class="portfolio-card">
           <div class="portfolio-text-box">
             <p class="portfolio-title">Breast Cancer Diagnosis</p>
+            <p class="portfolio-tech">Python</p>
             <p class="portfolio-description">
               A machine learning models trained on breast cancer data to
               classify tumors as malignant or benign.
@@ -229,8 +269,11 @@
       </div>
     </div>
   </footer>
+  <script src="/js/filter-selection.js"></script>
+  <script src="/js/filter-dropdown.js"></script>
   <script src="/js/dropdown-menu.js"></script>
   <script src="/js/navigate-to.js"></script>
+
   <!--  icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
