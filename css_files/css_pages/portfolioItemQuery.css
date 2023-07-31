@@ -15,6 +15,9 @@
     font-size: 2rem;
     line-height: 1.8;
   }
+  .small-font-1 {
+    font-size: 1.6rem;
+  }
   .portfolio-details-bottom {
     margin-left: 6.4rem;
     margin-right: 6.4rem;
@@ -90,6 +93,9 @@
   .techStack-description {
     font-size: 1.8rem;
   }
+  .small-font-1 {
+    font-size: 1.4rem;
+  }
   .heading-secondary {
     font-size: 2.8rem;
   }
@@ -151,6 +157,9 @@
   }
   .techStack-description {
     font-size: 1.8rem;
+  }
+  .small-font-1 {
+    font-size: 1.4rem;
   }
   .heading-tertiary {
     font-size: 2.2rem;

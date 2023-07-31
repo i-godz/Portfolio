@@ -1,4 +1,3 @@
-
 .temp-logo {
   font-size: 3.2rem;
   font-family: "Montserrat", sans-serif;
@@ -142,4 +141,23 @@ footer {
     width: calc(300% + 1.3px);
     height: 52px;
   }
+}
+
+/* copyright */
+
+.copy-right1 {
+  font-size: 16px;
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.copy-right2 {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.copy-right2:hover {
+  text-decoration: underline;
 }

@@ -23,7 +23,7 @@
       if (checked && checked.length > 0) {
         btnText.innerText = `${checked.length} Selected`;
       } else {
-        btnText.innerText = "Filter Tech";
+        btnText.innerText = "Tech Filter";
       }
     }
 
