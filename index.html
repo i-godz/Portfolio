@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css_files/landing-css/portfolio.css" />
     <link rel="stylesheet" href="css_files/landing-css/footer.css" />
     <link rel="stylesheet" href="css_files/landing-css/general.css" />
+    <link rel="stylesheet" href="css_files/css_pages/filter.css" />
 </head>
 
 
@@ -265,6 +266,45 @@
                 Some previous projects, but I am eager to take on more.
             </h2>
         </div>
+
+
+        <!-- filter section -->
+
+        <div class="container-f hidden">
+            <div class="select-btn-f">
+                <span class="btn-text-f">Tech Filter</span>
+                <span class="arrow-dwn-f">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul class="list-items-f">
+                <li class="item-f">
+                    <span class="checkbox-f">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text-f">Excel</span>
+                </li>
+                <li class="item-f">
+                    <span class="checkbox-f">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text-f">Python</span>
+                </li>
+                <li class="item-f">
+                    <span class="checkbox-f">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text-f">SQL</span>
+                </li>
+                <li class="item-f">
+                    <span class="checkbox-f">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text-f">Tableau</span>
+                </li>
+            </ul>
+        </div>
+
         <div class="container-pt flex">
             <div class="grid grid-col-3">
 
@@ -274,11 +314,10 @@
                 <div class="portfolio-card">
                     <div class="portfolio-text-box">
                         <p class="portfolio-title">Personal Spotify Streaming</p>
+                        <p class="portfolio-tech">Tableau</p>
                         <p class="portfolio-description">
-                            A dashboard that provides a comprehensive overview of
-                            employee attrition, including the rate of attrition, the
-                            reasons for attrition, and the demographics of employees who
-                            have left the company.
+                            A dashboard that I analyzed the listening trends of my friend, from 2018 to 2023 consisting
+                            of a staggering 156,100 songs played on Spotify.
                         </p>
                     </div>
                     <div class="portfolio-button-area">
@@ -294,6 +333,7 @@
                 <div class="portfolio-card">
                     <div class="portfolio-text-box">
                         <p class="portfolio-title">HR Attrition Dashboard</p>
+                        <p class="portfolio-tech">Excel</p>
                         <p class="portfolio-description">
                             A dashboard that provides a comprehensive overview of
                             employee attrition, including the rate of attrition, the
@@ -313,6 +353,7 @@
                 <div class="portfolio-card">
                     <div class="portfolio-text-box">
                         <p class="portfolio-title">Personal Academic Performance</p>
+                        <p class="portfolio-tech">Tableau</p>
                         <p class="portfolio-description">
                             This project created a personal academic performance dashboard that tracks my progress and
                             helps me identify areas where I can improve.
@@ -327,10 +368,89 @@
                 </div>
 
 
+                <!-- Gold Price Prediction -->
+
+
+                <div class="portfolio-card hidden">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">Gold Price Prediction
+                        </p>
+                        <p class="portfolio-tech">Python</p>
+                        <p class="portfolio-description">
+                            The goal of this project is to develop a machine learning model that can predict the price
+                            of gold based
+                            on historical data.
+                        </p>
+                    </div>
+                    <div class="portfolio-button-area">
+                        <a href="/html_pages/all-projects-portfolio/gold-price.html" target="_blank"
+                            class="portfolio-btn">Details
+                            &rarr;</a>
+                    </div>
+                </div>
+
+
+                <!-- Global Terrorism -->
+
+                <div class="portfolio-card hidden">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">Global Terrorism</p>
+                        <p class="portfolio-tech">Python, Tableau</p>
+                        <p class="portfolio-description">
+                            The objective of this project is to analyze the dataset on terrorism and identify the hot
+                            zones of
+                            terrorism using exploratory data analysis techniques.
+                        </p>
+                    </div>
+                    <div class="portfolio-button-area">
+                        <a href="/html_pages/all-projects-portfolio/global_terrorism.html" target="_blank"
+                            class="portfolio-btn">Details &rarr;</a>
+                    </div>
+                </div>
+
+
+                <!-- Image to Pencil Sketch -->
+
+                <div class="portfolio-card hidden">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">Image to Pencil Sketch</p>
+                        <p class="portfolio-tech">Python</p>
+                        <p class="portfolio-description">
+                            This project aims to create a pencil sketch of an image using Python.The objective of this
+                            project is to
+                            use image processing techniques in Python to create a pencil sketch of an input image.
+                        </p>
+                    </div>
+                    <div class="portfolio-button-area">
+                        <a href="/html_pages/all-projects-portfolio/pencil-sketch.html" target="_blank"
+                            class="portfolio-btn">Details &rarr;</a>
+                    </div>
+                </div>
+
+
+                <!-- Breast Cancer -->
+
+                <div class="portfolio-card hidden">
+                    <div class="portfolio-text-box">
+                        <p class="portfolio-title">Breast Cancer Diagnosis</p>
+                        <p class="portfolio-tech">Python</p>
+                        <p class="portfolio-description">
+                            A machine learning models trained on breast cancer data to
+                            classify tumors as malignant or benign.
+                        </p>
+                    </div>
+                    <div class="portfolio-button-area">
+                        <a href="/html_pages/all-projects-portfolio/breast_cancer.html" target="_blank"
+                            class="portfolio-btn">Details
+                            &rarr;</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <div class="Port-btn">
-            <a href="/html_pages/view-all-projects.html" target="_blank" class="port-btn">View More</a>
+            <div class="port-btn">View More</div>
         </div>
     </section>
 
@@ -415,6 +535,9 @@
     <!-- SCROLL UP -->
     <button id="scrollToTopButton" type="button">&#8673;</button>
     <!-- JAVA SCRIPTS -->
+    <script src="js/filter-selection.js"></script>
+    <script src="js/filter-dropdown.js"></script>
+    <script src="js/view-more.js"></script>
     <script src="js/dropdown-menu.js"></script>
     <script src="js/navigate-to.js"></script>
     <script src="js/scroll-to-top.js"></script>

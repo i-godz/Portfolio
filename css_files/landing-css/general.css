@@ -78,3 +78,10 @@ button#scrollToTopButton {
 button#scrollToTopButton.show {
   display: block;
 }
+
+.portfolio-tech {
+  display: none;
+}
+.hidden {
+  display: none;
+}
