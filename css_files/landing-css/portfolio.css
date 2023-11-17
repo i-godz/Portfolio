@@ -460,3 +460,18 @@ body {
     }
   }
 }
+
+.icon_tech_g {
+  display: flex;
+  width: 50px;
+  position: absolute;
+  padding-top: 49px;
+  padding-left: 30px;
+}
+.icon_tech_g-g {
+  display: flex;
+  width: 93px;
+  position: absolute;
+  padding-top: 49px;
+  padding-left: 74px;
+}
