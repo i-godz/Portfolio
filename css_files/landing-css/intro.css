@@ -221,6 +221,9 @@ h1 span::after {
   -webkit-animation: yellowLine 1s ease-in-out forwards;
 }
 
+.specialty{
+  font-size: 20px;
+}
 @keyframes yellowLine {
   0% {
     width: 0;
