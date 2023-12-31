@@ -50,7 +50,7 @@ header {
     text-align: center;
   }
   .header-ul {
-    left: 25px;
+    justify-content: center;
   }
 }
 
@@ -70,7 +70,7 @@ header {
     text-align: center;
   }
   .header-ul {
-    left: 15px;
+    justify-content: center;
   }
 }
 
@@ -221,7 +221,7 @@ h1 span::after {
   -webkit-animation: yellowLine 1s ease-in-out forwards;
 }
 
-.specialty{
+.specialty {
   font-size: 20px;
 }
 @keyframes yellowLine {

@@ -269,6 +269,10 @@
   height: 128px;
   width: 128px;
   border-radius: 50%;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 62.5rem) {
@@ -334,10 +338,10 @@ body {
 .subheading_st::before {
   content: "";
   display: block;
-  width: 24rem; /* Adjust the width of the line */
-  height: 4px; /* Adjust the height of the line */
-  border-radius: 4px; /* Adjust the border radius for rounded corners */
-  background-color: #4b5563; /* Adjust the color of the line */
+  width: 24rem;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffd109;
   margin: 0 auto 4.5rem; /* Adjust the spacing above the text */
 }
 .portfolio-title-st {
