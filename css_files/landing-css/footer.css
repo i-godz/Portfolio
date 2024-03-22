@@ -193,6 +193,10 @@ footer {
   .footer-temp-logo {
     font-size: 4rem;
   }
+  .twitter {
+    width: 17px;
+    height: 17px;
+  }
 }
 @media (max-width: 52rem) {
   .custom-shape-divider-bottom-1652342433 svg {
@@ -208,6 +212,10 @@ footer {
   .footer-temp-logo {
     font-size: 3.2rem;
   }
+  .twitter {
+    width: 17px;
+    height: 17px;
+  }
 }
 @media (max-width: 44.25rem) {
   .container {
@@ -215,6 +223,10 @@ footer {
   }
   .footer-grid {
     column-gap: 4.2rem;
+  }
+  .twitter {
+    width: 17px;
+    height: 17px;
   }
 }
 @media (max-width: 35.5rem) {
@@ -225,6 +237,10 @@ footer {
   }
   .footer-grid {
     column-gap: 10.2rem;
+  }
+  .twitter {
+    width: 17px;
+    height: 17px;
   }
 }
 @media (max-width: 30rem) {
@@ -238,6 +254,10 @@ footer {
   .footer-link:visited {
     font-size: 1.8rem;
   }
+  .twitter {
+    width: 17px;
+    height: 17px;
+  }
 }
 @media (max-width: 27rem) {
   .custom-shape-divider-bottom-1652342433 svg {
@@ -246,10 +266,18 @@ footer {
   .footer-grid {
     column-gap: 6.2rem;
   }
+  .twitter {
+    width: 17px;
+    height: 17px;
+  }
 }
 @media (max-width: 20.1875rem) {
   .custom-shape-divider-bottom-1652342433 svg {
     height: 129px;
+  }
+  .twitter {
+    width: 17px;
+    height: 17px;
   }
 }
 
