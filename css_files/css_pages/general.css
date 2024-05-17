@@ -71,7 +71,24 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
+.subheading-2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #339af0;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.subheading-2-1 {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
 .container {
   /* 1140px */
   /* max-width: 120rem; */
@@ -229,4 +246,35 @@ ul {
 }
 .small-font-1 {
   font-size: 2.2rem;
+}
+/* .default-bullets {
+  list-style-type: disc;
+} */
+.default-bullets {
+  list-style: none; /* Remove default bullets */
+   /* Add some padding for custom bullets */
+}
+
+.default-bullets li {
+  position: relative; /* Allow positioning of the pseudo-element */
+  margin-bottom: 10px;
+}
+
+.default-bullets li::before {
+  content: "•"; /* Unicode character for a bullet */
+  font-size: 2em; /* Adjust the size as needed */
+  color: black; /* Adjust the color as needed */
+  position: absolute; /* Position it absolutely */
+  left: -0.6em; /* Adjust this value based on the desired indentation */
+}
+.image-container-crm {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the image horizontally */
+  margin-top: 20px; /* Add some space above the image */
+}
+
+.image-container-crm img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra space below the image */
 }

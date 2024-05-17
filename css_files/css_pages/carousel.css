@@ -71,7 +71,7 @@
   justify-content: center;
   padding: 10px 0;
   flex-wrap: wrap;
-    row-gap: 7px
+  row-gap: 7px;
 }
 
 .carousel__indicator {
@@ -94,6 +94,7 @@
 }
 .carousel__button--left svg {
   enable-background: new 0 0 330 330;
-}.carousel__button--right svg {
+}
+.carousel__button--right svg {
   enable-background: new 0 0 330 330;
 }

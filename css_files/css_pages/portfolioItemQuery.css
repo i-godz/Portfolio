@@ -11,6 +11,10 @@
     font-size: 2rem;
     line-height: 1.4;
   }
+  .portfolioDetails-description-2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
   .techStack-description {
     font-size: 2rem;
     line-height: 1.8;
@@ -154,6 +158,9 @@
 @media (max-width: 26.5rem) {
   .portfolioDetails-description {
     font-size: 1.8rem;
+  }
+    .portfolioDetails-description-2 {
+    font-size: 1.4rem;
   }
   .techStack-description {
     font-size: 1.8rem;
