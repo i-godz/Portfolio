@@ -80,6 +80,15 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.subheading-3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
 .subheading-2-1 {
   display: block;
   font-size: 1.7rem;
