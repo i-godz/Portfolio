@@ -53,13 +53,12 @@
           <li><a href="#Skills" class="scroll-link">Skills</a></li>
           <li>
             <a
-              href="https://drive.google.com/file/d/14RBDcpAxkqpi-5lMp3H7iaiFDV1-OPKo/view?usp=sharing"
+              href="https://drive.google.com/file/d/1aFTGNDBPRd0vC1VvVEKQREH7YSD1atnF/view?usp=drive_link"
               target="_blank"
               class="no-scroll"
               >Resume</a
             >
           </li>
-          <!-- <li><a href="/html_pages/certificates.html" class="no-scroll">Certificates</a></li> -->
           <li>
             <a href="#contact" class="lets_talk_btn scroll-link">Let's Talk</a>
           </li>
@@ -83,7 +82,15 @@
           <br /><br /><br />
           <h2 class="specialty">A Junior BI Developer.</h2>
           <br /><br /><br />
-          <div></div>
+          <div>
+            <button
+              class="my-projects"
+              type="button"
+              onclick="scrollToElement('Portfolio')"
+            >
+              View My Projects
+            </button>
+          </div>
           <div class="social-new">
             <a
               href="https://www.linkedin.com/in/zyad-wael-36367a261/"
@@ -250,6 +257,7 @@
           </p>
         </div>
       </div>
+      <!-- horizontal timeline -->
       <div class="col-lg-12">
         <svg width="750" height="100">
           <line class="line" x1="0" y1="50" x2="750" y2="50"></line>
@@ -276,6 +284,7 @@
             r="10"
             fill="#FFA500"
           ></circle>
+          <text class="text" x="450" y="80" fill="white">2024</text>
           <text class="text" x="300" y="30" fill="white">Bachelor Degree</text>
           <text class="text" x="300" y="80" fill="white">
             Future University in Egypt
@@ -288,17 +297,22 @@
             r="10"
             fill="#FFA500"
           ></circle>
-          <text class="text" x="700" y="80" fill="white">2024</text>
+          <text class="text" x="700" y="80" fill="white">2025</text>
           <text class="text-small" x="520" y="30" fill="white">
             Data Analytics
           </text>
-          <text class="text-small" x="520" y="80" fill="white">Self-Study</text>
+          <text class="text-small" x="520" y="70" fill="white">self-study</text>
+          <text class="text-small" x="520" y="90" fill="white">
+            (Udemy, DataCamp)
+          </text>
         </svg>
       </div>
+
+      <!-- Vertical timeline -->
+
       <div class="col-lg-v">
         <svg width="330" height="420">
           <line class="line" x1="150" y1="0" x2="150" y2="400"></line>
-
           <circle
             class="circle"
             cx="150"
@@ -313,7 +327,6 @@
           <text class="text-small" x="162" y="20" fill="white">
             Dar El-Tarbiah
           </text>
-
           <circle
             class="circle"
             cx="150"
@@ -321,6 +334,7 @@
             r="10"
             fill="#FFA500"
           ></circle>
+          <text class="text" x="110" y="255" fill="white">2024</text>
           <text class="text" x="80" y="180" fill="white">Bachelor Degree</text>
           <text class="text-small" x="162" y="180" fill="white">
             Future University in Egypt
@@ -333,12 +347,15 @@
             r="10"
             fill="#FFA500"
           ></circle>
-          <text class="text" x="110" y="405" fill="white">2024</text>
+          <text class="text" x="110" y="405" fill="white">2025</text>
           <text class="text-small" x="47" y="325" fill="white">
             Data Analytics
           </text>
           <text class="text-small" x="162" y="325" fill="white">
             Self-Study
+          </text>
+          <text class="text-small" x="162" y="345" fill="white">
+            (Udemy, DataCamp)
           </text>
         </svg>
       </div>
@@ -363,21 +380,7 @@
                 alt="GDSC logo"
               />
             </a>
-            <!-- <p class="portfolio-title-st">Future University</p> -->
-          </div>
-          <div class="skill-item-st">
-            <a
-              href="https://www.linkedin.com/company/gdsc-damanhour-university/"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                class="skill-item-img-st"
-                src="assets/images/Damanhour.png"
-                alt="GDSC logo"
-              />
-            </a>
-            <!-- <p class="portfolio-title-st">Damanhour University </p> -->
+            <p class="portfolio-title-st">GDSC Future University</p>
           </div>
           <div class="skill-item-st">
             <a href="https://www.linkedin.com/company/gdsccic/" target="_blank">
@@ -388,7 +391,7 @@
                 alt="GDSC logo"
               />
             </a>
-            <!-- <p class="portfolio-title-st">Canadian International College</p> -->
+            <p class="portfolio-title-st">Techne</p>
           </div>
           <div class="skill-item-st">
             <a
@@ -402,6 +405,7 @@
                 alt="Techne logo"
               />
             </a>
+            <p class="portfolio-title-st">GDSC Canadian University</p>
           </div>
         </div>
       </section>
@@ -565,6 +569,16 @@
           />
           <p class="portfolio-title">Visual Studio</p>
         </div>
+
+        <div class="skill-item">
+          <img
+            loading="lazy"
+            class="skill-item-img"
+            src="assets/icons/talend_logo_icon_169665.png"
+            alt=" Talend logo"
+          />
+          <p class="portfolio-title">Talend</p>
+        </div>
       </div>
     </section>
 
@@ -609,12 +623,12 @@
           </span>
         </div>
         <ul class="list-items-f">
-          <li class="item-f">
+          <!-- <li class="item-f">
             <span class="checkbox-f">
               <i class="fa-solid fa-check check-icon"></i>
             </span>
             <span class="item-text-f">Excel</span>
-          </li>
+          </li> -->
           <li class="item-f">
             <span class="checkbox-f">
               <i class="fa-solid fa-check check-icon"></i>
@@ -973,18 +987,18 @@
                   </a>
                   <a
                     class="footer-link"
-                    href="https://x.com/i__godzilla?s=21"
+                    href="https://adplist.org/members/zyad-wael"
                     target="_blank"
                   >
                     <img
                       loading="lazy"
                       class="twitter"
-                      src="/assets/icons/twitter.png"
+                      src="/assets/icons/Applist.png"
                       width="24"
                       height="24"
-                      alt=""
+                      alt="ADPList logo"
                     />
-                    X
+                    ADPList 
                   </a>
                 </div>
               </div>
@@ -992,7 +1006,10 @@
           </div>
         </div>
       </div>
-      <!-- <p class="copy-right1">&#169 2024 Made with 💜 by <a class="copy-right2" href="">Moaz Wael</a>.</p> -->
+      <p class="copy-right1">
+        &#169; 2024 Made with &#128156; by
+        <a class="copy-right2" href="">Moaz Wael</a>.
+      </p>
     </footer>
 
     <!-- SCROLL UP -->
