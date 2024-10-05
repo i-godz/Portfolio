@@ -241,7 +241,6 @@ body {
 }
 .subheading_sk {
   display: block;
-  font-weight: 700;
   color: #000;
   margin-bottom: 8rem;
   letter-spacing: 0.75px;
@@ -281,4 +280,63 @@ body {
 ::placeholder {
   color: #999;
   opacity: 1;
+}
+
+.skills-grid-badge {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5.5rem;
+  justify-items: center;
+  margin-top: 3.2rem !important;
+}
+
+.container_badge{
+  width: 75%;
+ margin: 0 auto;
+}
+
+
+@media (max-width: 62.5rem) {
+  .skills-grid-badge {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 52rem) {
+  .skills-grid-badge {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 44.25rem) {
+  .skills-grid-badge {
+    column-gap: 1.2rem;
+  }
+}
+
+@media (max-width: 35.5rem) {
+  .skills-grid-badge {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 30rem) {
+  .skills-grid-badge {
+    column-gap: 6.2rem;
+  }
+}
+
+.skill-item-st:hover .skill-item-img-badge {
+  transform: scale(1.1);
+}
+
+.skill-item-img-badge {
+  transition: transform 0.3s ease-in-out;
+  height: 128px;
+  width: 128px;
+  /* border-radius: 50%; */
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
