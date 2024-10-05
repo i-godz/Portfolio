@@ -247,7 +247,7 @@
 
 .skills-grid-st {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 5.5rem;
   justify-items: center;
   margin-top: 3.2rem !important;
@@ -285,11 +285,17 @@
   .skills-grid-st {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid_position {
+    grid-column: 1/-1;
+  }
 }
 
 @media (max-width: 52rem) {
   .skills-grid-st {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_position {
+    grid-column: 1/-1;
   }
 }
 
@@ -302,6 +308,9 @@
 @media (max-width: 35.5rem) {
   .skills-grid-st {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_position {
+    grid-column: 1/-1;
   }
 }
 
